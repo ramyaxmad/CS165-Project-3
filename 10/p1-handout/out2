@@ -1,0 +1,60 @@
+OBJ ADD 1 A: result PASS
+OBJ ADD 2 B: result PASS
+OBJ ADD 3 A: result PASS
+OBJ ADD 4 B: result PASS
+OBJ ADD 5 A: result PASS
+OBJ ADD 6 B: result PASS
+OBJ LENGTH 1 10 : result PASS
+OBJ VALUE 1 10 : result PASS
+OBJ STRING 1 foobarbaz : result PASS
+OBJ OBJECT 2 1 : result PASS
+OBJ LENGTH 3 15 : result PASS
+OBJ VALUE 3 15 : result PASS
+OBJ STRING 3 foobarbazbaz : result PASS
+OBJ OBJECT 4 3 : result PASS
+OBJ LENGTH 5 20 : result PASS
+OBJ VALUE 5 20 : result PASS
+OBJ STRING 5 foobarbazbazbaz : result PASS
+OBJ OBJECT 6 5 : result PASS
+
+Object 5 of type A
+field val: 20
+field len: 20
+field string: foobarbazbazbaz
+OBJ DISPLAY 5: result PASS
+
+Display object 2 of type B
+field obj: PRESENT
+Displaying obj index: 1
+...
+Object 1 of type A
+field val: 10
+field len: 10
+field string: foobarbaz
+OBJ DISPLAY 2: result PASS
+
+Display object 4 of type B
+field obj: PRESENT
+Displaying obj index: 3
+...
+Object 3 of type A
+field val: 15
+field len: 15
+field string: foobarbazbaz
+OBJ DISPLAY 4: result PASS
+
+Display object 6 of type B
+field obj: PRESENT
+Displaying obj index: 5
+...
+Object 5 of type A
+field val: 20
+field len: 20
+field string: foobarbazbazbaz
+OBJ DISPLAY 6: result PASS
+OBJ REMOVE 1 : result PASS
+OBJ REMOVE 2 : result PASS
+OBJ REMOVE 3 : result PASS
+OBJ REMOVE 4 : result PASS
+OBJ REMOVE 5 : result PASS
+OBJ REMOVE 6 : result PASS

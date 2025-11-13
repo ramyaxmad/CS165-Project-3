@@ -1,0 +1,20 @@
+# no child object
+add 1 B
+display 1
+remove 1
+# add child
+add 2 A
+object 1 2
+add 3 B
+object 3 2
+value 2 5
+value 1 5
+value 3 5
+length 2 5
+string 2 foo
+display 1
+display 2
+display 3
+remove 1
+remove 2
+remove 3

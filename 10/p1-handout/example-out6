@@ -1,0 +1,32 @@
+OBJ ADD 1 A: result PASS
+OBJ ADD 2 A: result PASS
+OBJ LENGTH 1 20 : result PASS
+OBJ VALUE 1 20 : result PASS
+OBJ STRING 1 foobarbazbax : result PASS
+OBJ ADD 3 B: result PASS
+OBJ OBJECT 3 2 : result PASS
+
+Object 1 of type A
+field val: 20
+field len: 20
+field string: foobarbazbax
+OBJ DISPLAY 1: result PASS
+
+Object 2 of type A
+field val: 0
+field len: 0
+field string: 
+OBJ DISPLAY 2: result PASS
+
+Display object 3 of type B
+field obj: PRESENT
+Displaying obj index: 2
+...
+Object 2 of type A
+field val: 0
+field len: 0
+field string: 
+OBJ DISPLAY 3: result PASS
+OBJ REMOVE 1 : result PASS
+OBJ REMOVE 2 : result PASS
+OBJ REMOVE 3 : result PASS

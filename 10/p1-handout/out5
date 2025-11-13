@@ -1,0 +1,18 @@
+OBJ ADD 1 A: result PASS
+OBJ LENGTH 1 20 : result PASS
+OBJ VALUE 1 25 : result PASS
+OBJ STRING 1 foobarbaz : result PASS
+
+Object 1 of type A
+field val: 25
+field len: 20
+field string: foobarbaz
+OBJ DISPLAY 1: result PASS
+OBJ REMOVE 1 : result PASS
+OBJ ADD 2 B: result PASS
+OBJ OBJECT 2 1 : result FAIL
+
+Display object 2 of type B
+field obj: NONE
+No match for object A
+OBJ DISPLAY 2: result PASS

@@ -1,0 +1,36 @@
+OBJ ADD 1 B: result PASS
+
+Display object 1 of type B
+field obj: NONE
+No match for object A
+OBJ DISPLAY 1: result PASS
+OBJ REMOVE 1 : result PASS
+OBJ ADD 2 A: result PASS
+OBJ OBJECT 1 2 : result FAIL
+OBJ ADD 3 B: result PASS
+OBJ OBJECT 3 2 : result PASS
+OBJ VALUE 2 5 : result PASS
+OBJ VALUE 1 5 : result FAIL
+OBJ VALUE 3 5 : result PASS
+OBJ LENGTH 2 5 : result PASS
+OBJ STRING 2 foo : result PASS
+OBJ DISPLAY 1: result FAIL
+
+Object 2 of type A
+field val: 5
+field len: 5
+field string: foo
+OBJ DISPLAY 2: result PASS
+
+Display object 3 of type B
+field obj: PRESENT
+Displaying obj index: 2
+...
+Object 2 of type A
+field val: 5
+field len: 5
+field string: foo
+OBJ DISPLAY 3: result PASS
+OBJ REMOVE 1 : result PASS
+OBJ REMOVE 2 : result PASS
+OBJ REMOVE 3 : result PASS

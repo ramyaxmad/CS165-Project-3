@@ -1,0 +1,15 @@
+# squeeze space on 1A
+add 1 A
+# add another A object
+add 2 A
+length 1 20
+val 1 20
+string 1 foobarbazbax
+add 3 B
+object 3 2
+display 1
+display 2
+display 3
+remove 1
+remove 2
+remove 3

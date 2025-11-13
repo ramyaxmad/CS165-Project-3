@@ -1,0 +1,11 @@
+# no parent object
+add 1 A
+length 1 20
+val 1 25
+string 1 foobarbaz
+display 1
+remove 1
+# no child object
+add 2 B
+object 2 1
+display 2
