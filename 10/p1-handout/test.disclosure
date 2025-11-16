@@ -1,0 +1,9 @@
+add 0 A
+add 1 A
+add 2 A
+add 8 A
+add 9 A
+length 9 6
+string 9 secret
+string 8 --------------------------------
+display 8

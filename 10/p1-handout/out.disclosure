@@ -1,0 +1,14 @@
+OBJ ADD 0 A: result PASS
+OBJ ADD 1 A: result PASS
+OBJ ADD 2 A: result PASS
+OBJ ADD 8 A: result PASS
+OBJ ADD 9 A: result PASS
+OBJ LENGTH 9 6 : result PASS
+OBJ STRING 9 secret : result PASS
+OBJ STRING 8 -------------------------------- : result PASS
+
+Object 8 of type A
+field val: 0
+field len: 0
+field string: --------------------------------secret
+OBJ DISPLAY 8: result PASS
