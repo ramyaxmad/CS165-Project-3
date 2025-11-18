@@ -1,0 +1,19 @@
+OBJ ADD 0 A: result PASS
+OBJ LENGTH 0 6 : result PASS
+OBJ STRING 0 secret : result PASS
+OBJ ADD 1 A: result PASS
+OBJ ADD 2 B: result PASS
+OBJ OBJECT 2 1 : result PASS
+OBJ REMOVE 1 : result PASS
+OBJ ADD 1 B: result PASS
+OBJ OBJECT 1 0 : result PASS
+
+Display object 2 of type B
+field obj: PRESENT
+Displaying obj index: 1
+...
+Object 1 of type A
+field val: 0
+field len: 17508608
+field string: ê@
+OBJ DISPLAY 2: result PASS

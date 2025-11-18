@@ -1,0 +1,10 @@
+add 0 A
+length 0 6
+string 0 secret
+add 1 A
+add 2 B
+object 2 1
+remove 1
+add 1 B
+object 1 0
+display 2
