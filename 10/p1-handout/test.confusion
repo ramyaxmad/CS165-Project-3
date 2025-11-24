@@ -1,14 +1,13 @@
-add 0 A
-length 0 6
-string 0 secret
-add 1 A
-add 2 B
-object 2 1
-remove 1
 add 1 B
-object 1 0
+add 2 A
+add 3 A
+length 3 6
+string 3 secret
+object 1 2
+remove 2
+add 2 B
+add 4 A
+value 1 134516832
+object 2 4
+string 1 --------------->
 display 2
-display 1
-value 2 32
-display 2
-display 1

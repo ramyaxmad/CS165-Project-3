@@ -1,45 +1,13 @@
-OBJ ADD 0 A: result PASS
-OBJ LENGTH 0 6 : result PASS
-OBJ STRING 0 secret : result PASS
-OBJ ADD 1 A: result PASS
-OBJ ADD 2 B: result PASS
-OBJ OBJECT 2 1 : result PASS
-OBJ REMOVE 1 : result PASS
 OBJ ADD 1 B: result PASS
-OBJ OBJECT 1 0 : result PASS
-
-Display object 2 of type B
-field obj: PRESENT
-Displaying obj index: 1
-...
-Object 1 of type A
-field val: 0
-field len: 21498112
-field string: ê@
+OBJ ADD 2 A: result PASS
+OBJ ADD 3 A: result PASS
+OBJ LENGTH 3 6 : result PASS
+OBJ STRING 3 secret : result PASS
+OBJ OBJECT 1 2 : result PASS
+OBJ REMOVE 2 : result PASS
+OBJ ADD 2 B: result PASS
+OBJ ADD 4 A: result PASS
+OBJ VALUE 1 134516832 : result PASS
+OBJ OBJECT 2 4 : result PASS
+OBJ STRING 1 ---------------> : result PASS
 OBJ DISPLAY 2: result PASS
-
-Display object 1 of type B
-field obj: PRESENT
-Displaying obj index: 0
-...
-Object 0 of type A
-field val: 0
-field len: 6
-field string: secret
-OBJ DISPLAY 1: result PASS
-OBJ VALUE 2 32 : result PASS
-
-Display object 2 of type B
-field obj: PRESENT
-Displaying obj index: 1
-...
-Object 1 of type A
-field val: 32
-field len: 21498112
-field string: ê@
-OBJ DISPLAY 2: result PASS
-
-Display object 1 of type B
-field obj: PRESENT
-No match for object A
-OBJ DISPLAY 1: result PASS
