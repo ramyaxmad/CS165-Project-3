@@ -9,9 +9,9 @@
 #INCLUDES=-I. -I/opt/local/include
 #CC=gcc 
 CC=clang
-CFLAGS=-c $(INCLUDES) -g -Wall
+CFLAGS=-c $(INCLUDES) -g -Wall -m32 -ffreestanding -fno-stack-protector
 LINK=clang -g
-LDFLAGS=$(LIBDIRS)
+LDFLAGS=$(LIBDIRS) -m32 -ffreestanding
 AR=ar rc
 RANLIB=ranlib
 
@@ -37,29 +37,19 @@ cs165-obj : cs165-obj.o
 clean:
 	rm -f *.o *~ $(TARGETS)
 
-BASENAME=p1-handout
+BASENAME=p2-handout
 tar: 
 	tar cvfz $(BASENAME).tgz -C ..\
 	    $(BASENAME)/Makefile \
             $(BASENAME)/cs165-obj.c \
 	    $(BASENAME)/cs165-obj.h \
-	    $(BASENAME)/test1 \
-	    $(BASENAME)/test2 \
-	    $(BASENAME)/test3 \
-	    $(BASENAME)/test4 \
-	    $(BASENAME)/test5 \
-	    $(BASENAME)/test6 \
-	    $(BASENAME)/out1 \
-	    $(BASENAME)/out2 \
-	    $(BASENAME)/out3 \
-	    $(BASENAME)/out4 \
-	    $(BASENAME)/out5 \
-	    $(BASENAME)/out6 \
-	    $(BASENAME)/example-out1\
-	    $(BASENAME)/example-out2 \
-	    $(BASENAME)/example-out3 \
-	    $(BASENAME)/example-out4 \
-	    $(BASENAME)/example-out5 \
-	    $(BASENAME)/example-out6 \
+	    $(BASENAME)/test.disclosure \
+	    $(BASENAME)/test.confusion \
+	    $(BASENAME)/test.temporal \
+	    $(BASENAME)/test.overflow \
+	    $(BASENAME)/out.disclosure \
+	    $(BASENAME)/out.confusion \
+	    $(BASENAME)/out.temporal \
+	    $(BASENAME)/out.overflow \
 
 
