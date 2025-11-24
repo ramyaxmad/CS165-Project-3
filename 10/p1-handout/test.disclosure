@@ -5,5 +5,5 @@ add 8 A
 add 9 A
 length 9 6
 string 9 secret
-string 8 --------------------------------
+string 8 --------------->
 display 8
