@@ -306,7 +306,8 @@ int display_obj( char *index )
   case TYPE_B:
     b = (B_t *)objects.object[ind];
     a = ((B_t *)objects.object[ind])->obj;
-    return b_display(b, ind);
+    return b->display(b, ind);
+    //return b_display(b, ind); OLD CODE
     break;
   default:
     return -2;
