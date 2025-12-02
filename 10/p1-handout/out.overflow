@@ -1,0 +1,14 @@
+__libc_start_main([ "./cs165-obj", "test.overflow", "temp" ] <unfinished ...>
+fopen("test.overflow", "r")                      = 0x9aea1a0
+fopen("temp", "w+")                              = 0x9aea2e0
+malloc(12)                                       = 0x9aea420
+getline(0xffadefa0, 0xffadef90, 0x9aea1a0, 0x804a24f) = 52
+strlen("display AAAAAAAAAAAAAAAAAAAAAAAA"...)    = 52
+__isoc99_sscanf(0x9aeac48, 0x804b0e4, 0xffadef3c, 1) = 1
+atoi(0xffadef3c, 0x8049120, 0xffadef58, 0xf7e4641c) = 0
+atoi(0xffadef3c, 0xf7f81000, 0xf7e134c9, 0xf7e0fe04) = 0
+fprintf(0x9aea2e0, "OBJ DISPLAY %s: result %s\n", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., "FAIL") = 70
+enable_breakpoint pid=1546625, addr=0x41414141, symbol=(null): Input/output error
+printf("Main: Err: Incorrect usage: %s\n", "" <no return ...>
+--- SIGSEGV (Segmentation fault) ---
++++ killed by SIGSEGV +++
