@@ -7,7 +7,7 @@
 #define OBJ_DIS 6
 #define OBJ_ADD 7
 
-#define MAX_STRING 100
+#define MAX_STRING 12
 #define MAX_OBJECTS 10
 
 #define TYPE_A 1
